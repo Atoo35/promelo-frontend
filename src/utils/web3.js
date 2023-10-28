@@ -37,8 +37,7 @@ const getMyLoanNFTs = async () => {
     return await loanContract.methods.lendersActiveTokens(address).call();
 }
 
-const getAllNfts = async () => {
-    const [address] = await web3.eth.getAccounts();
+const _getAllNfts = async (address) => {
     // Get all NFTs
     const nfts = await alchemy.nft.getNftsForOwner(address);
 
@@ -56,6 +55,12 @@ const getAllNfts = async () => {
         i++;
     }
     return nftList;
+}
+
+const getAllNfts = async () => {
+    const [address] = await web3.eth.getAccounts();
+
+    return await _getAllNfts(address);
 }
 
 const getCreditScore = async (userAddress) => {
