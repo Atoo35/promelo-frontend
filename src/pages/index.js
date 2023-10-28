@@ -14,7 +14,7 @@ export default function Home () {
         </div>
         <div>
           <Image
-            // src={logo}
+            src={logo}
             width={900}
             height={550}
             alt="logo"
