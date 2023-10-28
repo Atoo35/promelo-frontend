@@ -12,8 +12,10 @@ import ReturnNFT from '../components/ReturnNFT';
 import ClaimCollateral from '../components/ClaimCollateral';
 import UserNFTsFromAllCollections from '../components/UserNFTsFromAllCollections';
 import { offerNFTForLoaning, scoreContract } from '../utils/web3';
+import GetNFTs from '../components/GetNFTs';
+import ShowMyLoanNfts from '../components/ShowMyLoanNfts';
 
-export default function Dapp() {
+export default function Dapp () {
     const [userAddress, setUserAddress] = useState(null);
     const [hasScoreNFT, setHasScoreNFT] = useState(false);
     const [showMintScoreNFT, setShowMintScoreNFT] = useState(false);
@@ -23,11 +25,14 @@ export default function Dapp() {
     const [showBorrowNFT, setShowBorrowNFT] = useState(false);
     const [showReturnNFT, setShowReturnNFT] = useState(false);
     const [showClaimCollateral, setShowClaimCollateral] = useState(false);
+    const [showAllNFTs, setShowAllNFTs] = useState(false);
+    const [showMyLoanNFTs, setShowMyLoanNFTs] = useState(false);
 
     useEffect(() => {
         const checkNFTOwnership = async () => {
             if (userAddress) {
                 const balance = await scoreContract.methods.balanceOf(userAddress).call();
+                console.log("balance", balance)
                 if (balance > 0) {
                     setHasScoreNFT(true);
                 }
@@ -100,6 +105,18 @@ export default function Dapp() {
                             Toggle Claim Collateral
                         </button>
                         {showClaimCollateral && <ClaimCollateral />}
+                    </div>
+                    <div>
+                        <button onClick={() => setShowAllNFTs(!showAllNFTs)}>
+                            Toggle All NFTs
+                        </button>
+                        {showAllNFTs && <GetNFTs />}
+                    </div>
+                    <div>
+                        <button onClick={() => setShowMyLoanNFTs(!showMyLoanNFTs)}>
+                            Toggle My Loan NFTs
+                        </button>
+                        {showMyLoanNFTs && <ShowMyLoanNfts />}
                     </div>
                 </div>
             )}
