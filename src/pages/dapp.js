@@ -32,7 +32,6 @@ export default function Dapp () {
         const checkNFTOwnership = async () => {
             if (userAddress) {
                 const balance = await scoreContract.methods.balanceOf(userAddress).call();
-                console.log("balance", balance)
                 if (balance > 0) {
                     setHasScoreNFT(true);
                 }
