@@ -22,7 +22,7 @@ export default function GetNFTs () {
             {/* <button onClick={fetchNFTs} className="bg-blue-600 text-white px-4 py-2 rounded">
                 Get NFTs
             </button> */}
-            <NFTCard nfts={nfts} />
+            <NFTCard nfts={nfts} marketplace={false} />
         </div>
     );
 }

@@ -188,4 +188,5 @@ module.exports = {
     scoreContract,
     loanContractAddress,
     getMyLoanNFTs,
+    _getAllNfts,
 }

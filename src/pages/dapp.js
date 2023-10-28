@@ -10,10 +10,10 @@ import ApproveLoanRequest from '../components/ApproveLoanRequest';
 import BorrowNFT from '../components/BorrowNFT';
 import ReturnNFT from '../components/ReturnNFT';
 import ClaimCollateral from '../components/ClaimCollateral';
-import UserNFTsFromAllCollections from '../components/UserNFTsFromAllCollections';
 import { offerNFTForLoaning, scoreContract } from '../utils/web3';
 import GetNFTs from '../components/GetNFTs';
 import ShowMyLoanNfts from '../components/ShowMyLoanNfts';
+import MarketPlace from '../components/Marketplace';
 
 export default function Dapp () {
     const [userAddress, setUserAddress] = useState(null);
@@ -27,6 +27,7 @@ export default function Dapp () {
     const [showClaimCollateral, setShowClaimCollateral] = useState(false);
     const [showAllNFTs, setShowAllNFTs] = useState(false);
     const [showMyLoanNFTs, setShowMyLoanNFTs] = useState(false);
+    const [showMarketPlace, setShowMarketPlace] = useState(false);
 
     useEffect(() => {
         const checkNFTOwnership = async () => {
@@ -116,6 +117,12 @@ export default function Dapp () {
                             Toggle My Loan NFTs
                         </button>
                         {showMyLoanNFTs && <ShowMyLoanNfts />}
+                    </div>
+                    <div>
+                        <button onClick={() => setShowMarketPlace(!showMarketPlace)}>
+                            Toggle Market Place
+                        </button>
+                        {showMarketPlace && <MarketPlace />}
                     </div>
                 </div>
             )}
