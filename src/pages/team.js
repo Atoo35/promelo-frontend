@@ -1,6 +1,9 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import TeamMemberCard from "../components/TeamMemberCard";
+import Image from "next/image";
+
+import yury from "../../public/assets/yury.jpeg";
 
 const teamMembers = [
   {

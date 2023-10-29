@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header () {
+export default function Header() {
   return (
     <header className="p-10 bg-black text-white">
       <div className="grid  grid-cols-3 px-4">

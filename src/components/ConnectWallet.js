@@ -1,6 +1,10 @@
 import Web3 from "web3";
 
+<<<<<<< HEAD
+export default function ConnectWallet({ onConnect }) {
+=======
 export default function ConnectWallet ({ onConnect }) {
+>>>>>>> origin/main
   const handleConnect = async () => {
     if (typeof window.ethereum !== "undefined") {
       const web3 = new Web3(window.ethereum);

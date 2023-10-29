@@ -7,7 +7,11 @@ module.exports = {
     variants: {
         extend: {},
     },
+<<<<<<< HEAD
+    plugins: [],
+=======
     plugins: [
         require('@tailwindcss/aspect-ratio'),
     ],
+>>>>>>> origin/main
 }
