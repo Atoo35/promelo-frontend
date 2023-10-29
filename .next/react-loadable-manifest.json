@@ -1,16 +1,4 @@
 {
-  "../../node_modules/alchemy-sdk/dist/esm/index-03ad9998.js -> ./alchemy-provider-033c5719.js": {
-    "id": "./node_modules/alchemy-sdk/dist/esm/alchemy-provider-033c5719.js",
-    "files": [
-      "static/chunks/node_modules_alchemy-sdk_dist_esm_alchemy-provider-033c5719_js.js"
-    ]
-  },
-  "../../node_modules/alchemy-sdk/dist/esm/index-03ad9998.js -> ./alchemy-websocket-provider-a2f83072.js": {
-    "id": "./node_modules/alchemy-sdk/dist/esm/alchemy-websocket-provider-a2f83072.js",
-    "files": [
-      "static/chunks/node_modules_alchemy-sdk_dist_esm_alchemy-websocket-provider-a2f83072_js.js"
-    ]
-  },
   "../../node_modules/next/dist/client/next-dev.js -> ./dev/noop": {
     "id": "./node_modules/next/dist/client/dev/noop.js",
     "files": [

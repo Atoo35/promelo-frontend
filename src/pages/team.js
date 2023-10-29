@@ -7,7 +7,8 @@ const teamMembers = [
     name: "Jonny E",
     role: "CEO",
     description: "Co-Founder",
-    image: "/path/to/image.jpg",
+    image:
+      "https://media.canva.com/1/image-resize/1/200_200_75_JPG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9hWUNQay9NQUZudGRhWUNQay8xL3AuanBn?osig=AAAAAAAAAAAAAAAAAAAAABamacRLED5CldfOb2E7XRBNyqHAZjmPD4yQcNsm0us8&exp=1698583950&x-canva-quality=thumbnail&csig=AAAAAAAAAAAAAAAAAAAAAEPzy6RARMBtxYiV0ZnWgZ4z3dE7MjJJxpAwuCriCkwv",
   },
   {
     name: "Raid Ateir",
@@ -25,7 +26,8 @@ const teamMembers = [
     name: "Yury R",
     role: "COO",
     description: "Co-Founder",
-    image: "/path/to/image.jpg",
+    image:
+      "https://media.canva.com/1/image-resize/1/150_200_75_JPG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9xNzBlWS9NQUZ5b3lxNzBlWS8xL3AuanBn?osig=AAAAAAAAAAAAAAAAAAAAACJP7NMf8hKfsl4jeV-jF7UwP7ULZXmYCHPGPn-uUP-D&exp=1698597531&x-canva-quality=thumbnail&csig=AAAAAAAAAAAAAAAAAAAAAAMGIsyOIJnbbe5a4a7Pmj8EztBcE2-OunPRot8BvfA5",
   },
   // ... other team members
 ];
