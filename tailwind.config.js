@@ -1,17 +1,11 @@
 module.exports = {
-    purge: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {},
-    },
-    variants: {
-        extend: {},
-    },
-<<<<<<< HEAD
-    plugins: [],
-=======
-    plugins: [
-        require('@tailwindcss/aspect-ratio'),
-    ],
->>>>>>> origin/main
-}
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./pages/**/*.{js,jsx,ts,tsx}"],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [require("@tailwindcss/aspect-ratio")],
+};

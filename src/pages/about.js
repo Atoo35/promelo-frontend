@@ -2,11 +2,6 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import Image from "next/image";
 
-import pic1 from "../../public/assets/1.png";
-import pic2 from "../../public/assets/2.png";
-import pic3 from "../../public/assets/3.png";
-import pic4 from "../../public/assets/4.png";
-import pic5 from "../../public/assets/5.png";
 import pic6 from "../../public/assets/6.png";
 
 export default function About() {

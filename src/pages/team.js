@@ -1,9 +1,6 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import TeamMemberCard from "../components/TeamMemberCard";
-import Image from "next/image";
-
-import yury from "../../public/assets/yury.jpeg";
 
 const teamMembers = [
   {
@@ -32,7 +29,7 @@ const teamMembers = [
   },
   // ... other team members
 ];
-export default function Team () {
+export default function Team() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
