@@ -1,13 +1,16 @@
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import TeamMemberCard from "../components/TeamMemberCard";
+import Image from "next/image";
+
+import yury from "../../public/assets/yury.jpeg";
 
 const teamMembers = [
   {
     name: "Jonny E",
     role: "CEO",
     description: "Co-Founder",
-    image: "/path/to/image.jpg",
+    image: "/../public/assets/yury.jpeg",
   },
   {
     name: "Raid Ateir",
