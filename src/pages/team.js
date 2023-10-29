@@ -10,7 +10,7 @@ const teamMembers = [
     name: "Jonny E",
     role: "CEO",
     description: "Co-Founder",
-    image: "/../public/assets/yury.jpeg",
+    image: "/path/to/image.jpg",
   },
   {
     name: "Raid Ateir",
@@ -32,7 +32,7 @@ const teamMembers = [
   },
   // ... other team members
 ];
-export default function Team() {
+export default function Team () {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
