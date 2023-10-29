@@ -63,7 +63,10 @@ export default function Dapp() {
           <hr />
           {!hasScoreNFT && (
             <div>
-              <button onClick={() => setShowMintScoreNFT(!showMintScoreNFT)}>
+              <button
+                className="font-bold"
+                onClick={() => setShowMintScoreNFT(!showMintScoreNFT)}
+              >
                 Mint NFT
               </button>
               {showMintScoreNFT && <MintScoreNFT userAddress={userAddress} />}
@@ -72,6 +75,7 @@ export default function Dapp() {
           {/* <UserNFTsFromAllCollections userAddress={userAddress} onOfferForLoan={handleOfferForLoan} /> */}
           <div>
             <button
+              className="font-bold"
               onClick={() => setShowOfferNFTForLoan(!showOfferNFTForLoan)}
             >
               Offer NFT For Loan
@@ -80,6 +84,7 @@ export default function Dapp() {
           </div>
           <div>
             <button
+              className="font-bold"
               onClick={() => setShowRequestToBorrow(!showRequestToBorrow)}
             >
               Request To Borrow
@@ -88,6 +93,7 @@ export default function Dapp() {
           </div>
           <div>
             <button
+              className="font-bold"
               onClick={() => setShowApproveLoanRequest(!showApproveLoanRequest)}
             >
               Approve Loan Request
@@ -95,19 +101,26 @@ export default function Dapp() {
             {showApproveLoanRequest && <ApproveLoanRequest />}
           </div>
           <div>
-            <button onClick={() => setShowBorrowNFT(!showBorrowNFT)}>
+            <button
+              className="font-bold"
+              onClick={() => setShowBorrowNFT(!showBorrowNFT)}
+            >
               Borrow NFT
             </button>
             {showBorrowNFT && <BorrowNFT />}
           </div>
           <div>
-            <button onClick={() => setShowReturnNFT(!showReturnNFT)}>
+            <button
+              className="font-bold"
+              onClick={() => setShowReturnNFT(!showReturnNFT)}
+            >
               Return NFT
             </button>
             {showReturnNFT && <ReturnNFT />}
           </div>
           <div>
             <button
+              className="font-bold"
               onClick={() => setShowClaimCollateral(!showClaimCollateral)}
             >
               Claim Collateral
