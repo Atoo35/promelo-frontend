@@ -64,7 +64,7 @@ export default function Dapp() {
           {!hasScoreNFT && (
             <div>
               <button onClick={() => setShowMintScoreNFT(!showMintScoreNFT)}>
-                Toggle Mint Score NFT
+                Mint NFT
               </button>
               {showMintScoreNFT && <MintScoreNFT userAddress={userAddress} />}
             </div>
@@ -74,7 +74,7 @@ export default function Dapp() {
             <button
               onClick={() => setShowOfferNFTForLoan(!showOfferNFTForLoan)}
             >
-              Toggle Offer NFT For Loan
+              Offer NFT For Loan
             </button>
             {showOfferNFTForLoan && <OfferNFTForLoan />}
           </div>
@@ -82,7 +82,7 @@ export default function Dapp() {
             <button
               onClick={() => setShowRequestToBorrow(!showRequestToBorrow)}
             >
-              Toggle Request To Borrow
+              Request To Borrow
             </button>
             {showRequestToBorrow && <RequestToBorrow />}
           </div>
@@ -90,19 +90,19 @@ export default function Dapp() {
             <button
               onClick={() => setShowApproveLoanRequest(!showApproveLoanRequest)}
             >
-              Toggle Approve Loan Request
+              Approve Loan Request
             </button>
             {showApproveLoanRequest && <ApproveLoanRequest />}
           </div>
           <div>
             <button onClick={() => setShowBorrowNFT(!showBorrowNFT)}>
-              Toggle Borrow NFT
+              Borrow NFT
             </button>
             {showBorrowNFT && <BorrowNFT />}
           </div>
           <div>
             <button onClick={() => setShowReturnNFT(!showReturnNFT)}>
-              Toggle Return NFT
+              Return NFT
             </button>
             {showReturnNFT && <ReturnNFT />}
           </div>
@@ -110,7 +110,7 @@ export default function Dapp() {
             <button
               onClick={() => setShowClaimCollateral(!showClaimCollateral)}
             >
-              Toggle Claim Collateral
+              Claim Collateral
             </button>
             {showClaimCollateral && <ClaimCollateral />}
           </div>
